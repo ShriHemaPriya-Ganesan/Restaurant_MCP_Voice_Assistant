@@ -12,7 +12,7 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 # 🧠 How It Works
 
-<table align="left">
+<table align="center">
   <tr>
     <td style="vertical-align: middle; text-align: center; border: none;">
       <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank" style="text-decoration:none; color:black;">
