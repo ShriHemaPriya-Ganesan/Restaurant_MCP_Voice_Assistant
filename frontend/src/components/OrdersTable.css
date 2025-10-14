@@ -1,0 +1,26 @@
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+.orders-table th {
+  background: #f5f7fa;
+  font-weight: 600;
+}
+
+.orders-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.orders-table tr:hover {
+  background: #eef6ff;
+}

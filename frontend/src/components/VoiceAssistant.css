@@ -1,0 +1,104 @@
+.assistant-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+    url('../assests/background.jpeg') center/cover no-repeat;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+.assistant-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px 32px;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  height: -webkit-fill-available;
+}
+
+.assistant-title {
+  margin-bottom: 12px;
+  color: #333;
+  font-weight: 600;
+}
+
+.assistant-inputs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.assistant-input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+  font-size: 15px;
+}
+
+.mic-section {
+  margin-bottom: 24px;
+}
+
+.mic-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: none;
+  background: #d1d9e6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.mic-button.active {
+  background: #007bff;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.6);
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(0, 123, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 123, 255, 0); }
+}
+
+
+.mic-icon {
+  font-size: 28px;
+}
+
+.mic-status {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.assistant-chat {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: left;
+}
+
+.chat-bubble {
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+.chat-bubble.user {
+  background: #e7f1ff;
+  color: #003366;
+}
+
+.chat-bubble.bot {
+  background: #f0f0f0;
+  color: #222;
+}

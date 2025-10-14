@@ -1,0 +1,10 @@
+[
+  { "id": 1, "name": "Margherita Pizza", "ingredients": ["Tomato", "Mozzarella", "Basil"], "allergens": ["Dairy"], "price": 10 },
+  { "id": 2, "name": "Pasta Alfredo", "ingredients": ["Cream", "Garlic", "Parmesan"], "allergens": ["Dairy"], "price": 12 },
+  { "id": 3, "name": "Veggie Burger", "ingredients": ["Bun", "Patty", "Lettuce", "Tomato"], "allergens": ["Gluten"], "price": 11 },
+  { "id": 4, "name": "Grilled Chicken", "ingredients": ["Chicken", "Herbs", "Olive Oil"], "allergens": [], "price": 14 },
+  { "id": 5, "name": "Caesar Salad", "ingredients": ["Lettuce", "Croutons", "Parmesan", "Dressing"], "allergens": ["Dairy", "Gluten"], "price": 9 },
+  { "id": 6, "name": "Tomato Soup", "ingredients": ["Tomato", "Onion", "Garlic"], "allergens": [], "price": 7 },
+  { "id": 7, "name": "Lemonade", "ingredients": ["Lemon", "Sugar", "Water"], "allergens": [], "price": 4 },
+  { "id": 8, "name": "Brownie", "ingredients": ["Cocoa", "Butter", "Flour", "Sugar"], "allergens": ["Gluten", "Dairy"], "price": 5 }
+]
