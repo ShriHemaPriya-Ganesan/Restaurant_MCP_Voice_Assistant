@@ -10,22 +10,24 @@ The Restaurant AI Assistant lets customers speak naturally to place, customize, 
 
 During busy hours, instead of waiting for a server, guests can simply talk to the AI. The system understands the request, interacts with the backend through MCP tools, and keeps everything in sync across the kitchen and front desk.
 
-# 🧠 How It Works
-
-<table align="center">
+<table align="left">
   <tr>
     <td style="vertical-align: middle; text-align: center; border: none;">
-      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank" style="text-decoration:none; color:black;">
-        <span style="font-size:22px; font-weight:700;">PLAY THE DEMO!</span>
+      <span style="font-size:20px; font-weight:600;">PLAY THE DEMO!</span>
+    </td>
+    <td style="vertical-align: middle; text-align: center; border: none;">
+      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank">
         <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png"
              alt="Watch Demo"
-             width="35"
-             height="35"
+             width="30"
+             height="30"
              style="vertical-align:middle; margin-left:8px;"/>
       </a>
     </td>
   </tr>
 </table>
+
+# 🧠 How It Works
 
 <img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
 
