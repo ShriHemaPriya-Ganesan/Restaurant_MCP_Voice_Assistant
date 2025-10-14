@@ -10,17 +10,23 @@ The Restaurant AI Assistant lets customers speak naturally to place, customize, 
 
 During busy hours, instead of waiting for a server, guests can simply talk to the AI. The system understands the request, interacts with the backend through MCP tools, and keeps everything in sync across the kitchen and front desk.
 
-PLAY THE DEMO! <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank"> <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png" alt="Watch Demo" width="30" height="90"/> </a> 
-<p align="center">
-  <span style="font-size:20px; font-weight:600; vertical-align:middle;">PLAY THE DEMO!</span>
-  <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank">
-    <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png" 
-         alt="Watch Demo" 
-         width="30" 
-         height="30" 
-         style="vertical-align:middle; margin-left:8px;"/>
-  </a>
-</p>
+<table align="center">
+  <tr>
+    <td style="vertical-align: middle; text-align: center; border: none;">
+      <span style="font-size:20px; font-weight:600;">PLAY THE DEMO!</span>
+    </td>
+    <td style="vertical-align: middle; text-align: center; border: none;">
+      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png"
+             alt="Watch Demo"
+             width="30"
+             height="30"
+             style="vertical-align:middle; margin-left:8px;"/>
+      </a>
+    </td>
+  </tr>
+</table>
+
 
 
 
