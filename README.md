@@ -19,21 +19,21 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 > AI Integration (OpenAI) – GPT models interpret natural speech and decide which backend "tool" (function) to call — such as creating, modifying, or canceling orders.
 
-> Model Context Protocol (MCP) – Acts as the bridge between the AI model and the backend. The model doesn't just reply - it calls functions like orders_create / menu_search_dish in real time, keeping the conversation grounded in actual restaurant data.
+> Model Context Protocol (MCP) – Bridges the AI and backend logic, enabling the model to run real functions like orders_create or orders_cancel.
 
 > WebSocket Updates – Kitchen dashboards receive instant order changes without refreshing.
 
 > React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
 
 # 🧩 Technologies Used
-Technology	Purpose
-React (TypeScript)	Frontend framework for a responsive, real-time web app
-Express + Node.js	Backend API and WebSocket server
-Socket.IO	Live updates between customers, kitchen, and admin views
-OpenAI API (GPT-4o-mini)	Natural language understanding and AI-driven responses
-MCP (Model Context Protocol)	Enables the model to call backend “tools” (functions) like creating or updating orders
-Speech Recognition + Speech Synthesis	Converts spoken words to text and plays back AI responses
-CSS / Custom Components	Styled, minimal interface that adapts to each role view (Voice, Kitchen, Admin)
+| Technology                | Purpose                                                             |
+|---------------------------|---------------------------------------------------------------------|
+| React (TypeScript)        | Fast, responsive modern web app frontend.                 |
+| Express + Node.js         | Powers the backend API and manages WebSocket connections.           |
+| Socket.IO                 | Enables real-time updates between customers, kitchen, and admins.   |
+| OpenAI API (GPT-4o-mini)  | Drives natural language understanding and generates smart replies.  |
+| MCP (Model Context Protocol) | Lets the model call backend functions, such as placing/updating orders. |
+
 
 # 🚀 Future Enhancements
 
