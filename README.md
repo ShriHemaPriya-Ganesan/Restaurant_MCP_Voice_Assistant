@@ -15,19 +15,7 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 # 🧠 How It Works
 
-> Voice Interface – Customers use a built-in voice assistant to order food, ask about ingredients, or make changes.
-
-> AI Integration (OpenAI) – GPT models interpret natural speech and decide which backend "tool" (function) to call — such as creating, modifying, or canceling orders.
-
-> Model Context Protocol (MCP) – Bridges the AI and backend logic, enabling the model to run real functions like orders_create or orders_cancel.
-
-> WebSocket Updates – Kitchen dashboards receive instant order changes without refreshing.
-
-> React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
-
 <img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
-
-
 
 # 🧩 Technologies Used
 | Technology                | Purpose                                                             |
