@@ -17,6 +17,9 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 <img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
 
+<img width="783" height="1588" alt="image" src="https://github.com/user-attachments/assets/97db5035-a669-48f0-80f6-8361d62db50b" />
+
+
 # 🧩 Technologies Used
 | Technology                | Purpose                                                             |
 |---------------------------|---------------------------------------------------------------------|
