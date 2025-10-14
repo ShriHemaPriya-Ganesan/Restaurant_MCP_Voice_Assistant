@@ -22,7 +22,7 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 > React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
 
-# ▶️ Watch the Demo
+# Watch the Demo
 <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank"> <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png" alt="Watch Demo" width="80"/> </a>
 
 # 🧩 Technologies Used
