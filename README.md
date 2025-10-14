@@ -12,22 +12,23 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 # 🧠 How It Works
 
-<table align="center">
+<table>
   <tr>
-    <td style="vertical-align: middle; text-align: center; border: none;">
-      <span style="font-size:20px; font-weight:600;">PLAY THE DEMO!</span>
-    </td>
-    <td style="vertical-align: middle; text-align: center; border: none;">
-      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank">
+    <td style="vertical-align: middle; text-align: left; border: none;">
+      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" 
+         target="_blank" 
+         style="text-decoration:none; color:black;">
+        <span style="font-size:22px; font-weight:700;">PLAY THE DEMO!</span>
         <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png"
              alt="Watch Demo"
-             width="30"
-             height="30"
+             width="35"
+             height="35"
              style="vertical-align:middle; margin-left:8px;"/>
       </a>
     </td>
   </tr>
 </table>
+
 <img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
 
 # 🧩 Technologies Used
