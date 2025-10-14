@@ -25,24 +25,7 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 > React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
 
-🎤 Voice Assistant (React)
-        │
-        ▼
-💬 Speech → Text (Web Speech API)
-        │
-        ▼
-🌐 Express / Node.js Backend
-        │
-        ├── 🧠 OpenAI API (GPT-4o-mini)
-        │       ↳ Understands intent
-        │       ↳ Calls MCP tools
-        │
-        ├── 🧩 MCP Tools (orders_create, menu_search_dish, etc.)
-        │       ↳ Executes restaurant actions
-        │
-        └── ⚡ Socket.IO
-                ↳ Pushes updates → Kitchen Dashboard
-                                 → Admin Dashboard
+<img width="605" height="508" alt="image" src="https://github.com/user-attachments/assets/c855385d-c7e3-481b-91c0-135b972daf2d" />
 
 
 
