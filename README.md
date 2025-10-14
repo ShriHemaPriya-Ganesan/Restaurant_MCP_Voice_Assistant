@@ -12,12 +12,10 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 # 🧠 How It Works
 
-<table>
+<table align="left">
   <tr>
-    <td style="vertical-align: middle; text-align: left; border: none;">
-      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" 
-         target="_blank" 
-         style="text-decoration:none; color:black;">
+    <td style="vertical-align: middle; text-align: center; border: none;">
+      <a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank" style="text-decoration:none; color:black;">
         <span style="font-size:22px; font-weight:700;">PLAY THE DEMO!</span>
         <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png"
              alt="Watch Demo"
