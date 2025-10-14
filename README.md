@@ -10,6 +10,19 @@ The Restaurant AI Assistant lets customers speak naturally to place, customize, 
 
 During busy hours, instead of waiting for a server, guests can simply talk to the AI. The system understands the request, interacts with the backend through MCP tools, and keeps everything in sync across the kitchen and front desk.
 
+# 🧠 How It Works
+
+<img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
+
+# 🧩 Technologies Used
+| Technology                | Purpose                                                             |
+|---------------------------|---------------------------------------------------------------------|
+| React (TypeScript)        | Fast, responsive modern web app frontend.                 |
+| Express + Node.js         | Powers the backend API and manages WebSocket connections.           |
+| Socket.IO                 | Enables real-time updates between customers, kitchen, and admins.   |
+| OpenAI API (GPT-4o-mini)  | Drives natural language understanding and generates smart replies.  |
+| MCP (Model Context Protocol) | Lets the model call backend functions, such as placing/updating orders. |
+
 <table align="left">
   <tr>
     <td style="vertical-align: middle; text-align: center; border: none;">
@@ -26,17 +39,4 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
     </td>
   </tr>
 </table>
-
-# 🧠 How It Works
-
-<img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
-
-# 🧩 Technologies Used
-| Technology                | Purpose                                                             |
-|---------------------------|---------------------------------------------------------------------|
-| React (TypeScript)        | Fast, responsive modern web app frontend.                 |
-| Express + Node.js         | Powers the backend API and manages WebSocket connections.           |
-| Socket.IO                 | Enables real-time updates between customers, kitchen, and admins.   |
-| OpenAI API (GPT-4o-mini)  | Drives natural language understanding and generates smart replies.  |
-| MCP (Model Context Protocol) | Lets the model call backend functions, such as placing/updating orders. |
-
+<br>
