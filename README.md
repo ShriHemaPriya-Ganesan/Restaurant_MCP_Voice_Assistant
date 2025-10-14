@@ -25,15 +25,8 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 > React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
 
-```mermaid
-flowchart TD
-    A[Customer Voice Input] --> B[Voice Assistant UI (React)]
-    B --> C[Backend (Express + Node.js)]
-    C --> D[OpenAI API (GPT-4o-mini)]
-    C --> E[MCP Tools: orders_create, menu_search_dish, orders_update_status]
-    C --> F[Socket.IO Broadcast]
-    F --> G[Kitchen Display]
-    F --> H[Admin Dashboard]
+<img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
+
 
 
 # 🧩 Technologies Used
