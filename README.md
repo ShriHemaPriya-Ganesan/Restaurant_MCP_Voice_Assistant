@@ -27,7 +27,7 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 <img width="605" height="508" alt="image" src="https://github.com/user-attachments/assets/c855385d-c7e3-481b-91c0-135b972daf2d" />
 
-
+<pre> ```mermaid flowchart TD A[🎙️ Customer Voice Command] --> B[🧠 AI (GPT-4o-mini via OpenAI API)] B -->|Understands intent| C[(⚙️ Model Context Protocol - MCP)] C -->|Calls functions| D[🍳 Backend API (Express + Node.js)] D -->|Broadcasts events| E[🔗 WebSocket Server (Socket.IO)] E -->|Updates in real time| F[📺 Kitchen Dashboard] E -->|Synchronizes| G[👩‍💼 Admin Panel] A -->|Speech feedback| B ``` </pre>
 
 # 🧩 Technologies Used
 | Technology                | Purpose                                                             |
