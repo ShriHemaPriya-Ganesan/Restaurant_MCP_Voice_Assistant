@@ -25,6 +25,16 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 > React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
 
+flowchart TD
+    A[🎙️ Customer Voice Command] --> B[🧠 AI (GPT-4o-mini via OpenAI API)]
+    B -->|Understands intent| C[(⚙️ Model Context Protocol - MCP)]
+    C -->|Calls functions| D[🍳 Backend API (Express + Node.js)]
+    D -->|Broadcasts events| E[🔗 WebSocket Server (Socket.IO)]
+    E -->|Updates in real time| F[📺 Kitchen Dashboard]
+    E -->|Synchronizes| G[👩‍💼 Admin Panel]
+    A -->|Speech feedback| B
+
+
 # 🧩 Technologies Used
 | Technology                | Purpose                                                             |
 |---------------------------|---------------------------------------------------------------------|
