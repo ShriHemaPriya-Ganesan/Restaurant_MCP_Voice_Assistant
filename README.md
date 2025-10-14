@@ -10,6 +10,9 @@ The Restaurant AI Assistant lets customers speak naturally to place, customize, 
 
 During busy hours, instead of waiting for a server, guests can simply talk to the AI. The system understands the request, interacts with the backend through MCP tools, and keeps everything in sync across the kitchen and front desk.
 
+# Watch the Demo
+<a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank"> <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png" alt="Watch Demo" width="80"/> </a>
+
 # 🧠 How It Works
 
 > Voice Interface – Customers use a built-in voice assistant to order food, ask about ingredients, or make changes.
@@ -21,9 +24,6 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 > WebSocket Updates – Kitchen dashboards receive instant order changes without refreshing.
 
 > React Frontend – Provides a clean, simple UI for Voice Assistant, Kitchen Display, and Admin panels.
-
-# Watch the Demo
-<a href="https://drive.google.com/file/d/1sXK7GhIB-pxYLbvUUU9VstuxAA_PhF1V/view?usp=sharing" target="_blank"> <img src="https://img.icons8.com/ios-filled/100/play-button-circled--v1.png" alt="Watch Demo" width="80"/> </a>
 
 # 🧩 Technologies Used
 Technology	Purpose
