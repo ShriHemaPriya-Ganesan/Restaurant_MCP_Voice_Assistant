@@ -4,17 +4,17 @@ An interactive restaurant management assistant that brings together AI-powered c
 
 This project combines voice interaction, real-time order tracking, and AI intelligence to create a smoother experience for both customers and staff.
 
-# ✨ Overview
+# Overview
 
 The Restaurant AI Assistant lets customers speak naturally to place, customize, or cancel orders - while kitchen and admin dashboards update live in real time.
 
 During busy hours, instead of waiting for a server, guests can simply talk to the AI. The system understands the request, interacts with the backend through MCP tools, and keeps everything in sync across the kitchen and front desk.
 
-# 🧠 How It Works
+# How It Works
 
 <img width="1636" height="966" alt="image" src="https://github.com/user-attachments/assets/a90bf5df-4f42-4daa-adf6-913a9e5356ae" />
 
-# 🧩 Technologies Used
+# Technologies Used
 | Technology                | Purpose                                                             |
 |---------------------------|---------------------------------------------------------------------|
 | React (TypeScript)        | Fast, responsive modern web app frontend.                 |
