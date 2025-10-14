@@ -27,13 +27,13 @@ During busy hours, instead of waiting for a server, guests can simply talk to th
 
 ```mermaid
 flowchart TD
-    A[🎤 Customer Voice Input] --> B[Voice Assistant UI (React)]
+    A[Customer Voice Input] --> B[Voice Assistant UI (React)]
     B --> C[Backend (Express + Node.js)]
-    C --> D[(OpenAI API)]
-    C --> E[[MCP Tools<br/>orders_create, menu_search_dish]]
-    C --> F[[Socket.IO Broadcast]]
-    F --> G[Kitchen Display 👩‍🍳]
-    F --> H[Admin Dashboard 📊]
+    C --> D[OpenAI API (GPT-4o-mini)]
+    C --> E[MCP Tools: orders_create, menu_search_dish, orders_update_status]
+    C --> F[Socket.IO Broadcast]
+    F --> G[Kitchen Display]
+    F --> H[Admin Dashboard]
 
 
 # 🧩 Technologies Used
