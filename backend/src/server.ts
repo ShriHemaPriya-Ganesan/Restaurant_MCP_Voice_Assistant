@@ -50,7 +50,7 @@ function broadcastOrders() {
 }
 
 // ---------- MCP Tool Implementations ----------
-function menu_search_dish({ query }: { query: string }) {
+function search_menu({ query }: { query: string }) {
   const q = (query || '').toLowerCase();
   const results = menu.filter(
     (m: any) =>
@@ -60,7 +60,7 @@ function menu_search_dish({ query }: { query: string }) {
   return { results };
 }
 
-function orders_create({ table_id, items }: { table_id: number; items: string[] }): Order {
+function create_orders({ table_id, items }: { table_id: number; items: string[] }): Order {
   if (!table_id || !Array.isArray(items) || items.length === 0)
     throw new Error('table_id and items[] are required');
 
@@ -76,7 +76,7 @@ function orders_create({ table_id, items }: { table_id: number; items: string[] 
   return order;
 }
 
-function orders_modify({
+function modify_orders({
   order_id,
   add_items = [],
   remove_items = [],
@@ -99,7 +99,7 @@ function orders_modify({
   return order;
 }
 
-function orders_cancel({ order_id }: { order_id: number }) {
+function cancel_orders({ order_id }: { order_id: number }) {
   const idx = orders.findIndex((o) => o.id === Number(order_id));
   if (idx === -1) throw new Error('Order not found');
   const [removed] = orders.splice(idx, 1);
@@ -107,7 +107,7 @@ function orders_cancel({ order_id }: { order_id: number }) {
   return { cancelled: true, order: removed };
 }
 
-function orders_update_status({
+function update_order_status({
   order_id,
   status,
 }: {
@@ -132,7 +132,7 @@ app.get('/api/orders', (_req: Request, res: Response) => res.json(orders));
 
 app.post('/api/orders', (req: Request, res: Response) => {
   try {
-    res.json(orders_create(req.body));
+    res.json(create_orders(req.body));
   } catch (e: any) {
     res.status(400).json({ error: String(e.message || e) });
   }
@@ -140,7 +140,7 @@ app.post('/api/orders', (req: Request, res: Response) => {
 
 app.put('/api/orders/:id', (req: Request, res: Response) => {
   try {
-    res.json(orders_modify({ order_id: Number(req.params.id), ...req.body }));
+    res.json(modify_orders({ order_id: Number(req.params.id), ...req.body }));
   } catch (e: any) {
     res.status(400).json({ error: String(e.message || e) });
   }
@@ -148,7 +148,7 @@ app.put('/api/orders/:id', (req: Request, res: Response) => {
 
 app.delete('/api/orders/:id', (req: Request, res: Response) => {
   try {
-    res.json(orders_cancel({ order_id: Number(req.params.id) }));
+    res.json(cancel_orders({ order_id: Number(req.params.id) }));
   } catch (e: any) {
     res.status(400).json({ error: String(e.message || e) });
   }
@@ -157,7 +157,7 @@ app.delete('/api/orders/:id', (req: Request, res: Response) => {
 app.post('/api/orders/:id/status', (req: Request, res: Response) => {
   try {
     res.json(
-      orders_update_status({ order_id: Number(req.params.id), status: req.body.status })
+      update_order_status({ order_id: Number(req.params.id), status: req.body.status })
     );
   } catch (e: any) {
     res.status(400).json({ error: String(e.message || e) });
@@ -173,7 +173,7 @@ const toolsForOpenAI = [
   {
     type: 'function',
     function: {
-      name: 'menu_search_dish',
+      name: 'search_menu',
       description: 'Search for menu items by name or ingredient',
       parameters: {
         type: 'object',
@@ -185,7 +185,7 @@ const toolsForOpenAI = [
   {
     type: 'function',
     function: {
-      name: 'orders_create',
+      name: 'create_orders',
       description: 'Create a new order',
       parameters: {
         type: 'object',
@@ -200,7 +200,7 @@ const toolsForOpenAI = [
   {
     type: 'function',
     function: {
-      name: 'orders_modify',
+      name: 'modify_orders',
       description: 'Modify an existing order',
       parameters: {
         type: 'object',
@@ -217,7 +217,7 @@ const toolsForOpenAI = [
   {
     type: 'function',
     function: {
-      name: 'orders_cancel',
+      name: 'cancel_orders',
       description: 'Cancel an order',
       parameters: {
         type: 'object',
@@ -229,7 +229,7 @@ const toolsForOpenAI = [
   {
     type: 'function',
     function: {
-      name: 'orders_update_status',
+      name: 'update_order_status',
       description: 'Update order status',
       parameters: {
         type: 'object',
@@ -247,11 +247,11 @@ const toolsForOpenAI = [
 ];
 
 const toolExec: Record<string, Function> = {
-  menu_search_dish,
-  orders_create,
-  orders_modify,
-  orders_cancel,
-  orders_update_status,
+  search_menu,
+  create_orders,
+  modify_orders,
+  cancel_orders,
+  update_order_status,
 };
 
 // ---------- POST /assistant ----------
@@ -260,13 +260,11 @@ app.post('/assistant', async (req: Request, res: Response) => {
 
   if (!openai) {
     return res.json({
-      reply: `I heard: "${message}". (Demo mode — add OPENAI_API_KEY to .env for real responses.)`,
+      reply: `I heard: "${message}".`,
     });
   }
 
-  const system = `You are a helpful restaurant assistant.
-- Keep answers short.
-- Use tools to search menu or manage orders.`;
+  const system = `You are a helpful restaurant assistant.`;
 
   try {
     const first = await openai.chat.completions.create({
@@ -286,7 +284,7 @@ app.post('/assistant', async (req: Request, res: Response) => {
       for (const call of firstMsg.tool_calls) {
         const { name, arguments: argsJson } = call.function;
         const args = JSON.parse(argsJson || '{}');
-        if (name === 'orders_create' && args.table_id == null && table_id != null)
+        if (name === 'create_orders' && args.table_id == null && table_id != null)
           args.table_id = table_id;
 
         let result: any;
